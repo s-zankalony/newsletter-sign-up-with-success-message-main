@@ -186,7 +186,7 @@ form input:hover {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 420px;
+    max-width: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -244,12 +244,12 @@ form input:hover {
     font-size: 0.8rem;
   }
 }
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .card {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 400px;
+    max-width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -305,4 +305,4 @@ form input:hover {
     font-weight: 400;
     font-size: 0.5rem;
   }
-} */
+}
