@@ -20,6 +20,8 @@ submitBtn.addEventListener("click", (e) => {
     console.log("non valid email");
     labelSubmit.innerHTML = `Pls insert valid email address`;
     labelSubmit.style.color = "red";
+    emailInput.style.background = "pink";
+    emailInput.style.borderColor = "red";
   }
 });
 
@@ -30,4 +32,6 @@ dismissBtn.addEventListener("click", (e) => {
   emailInput.value = "";
   labelSubmit.innerHTML = `Email Address`;
   labelSubmit.style.color = "black";
+  emailInput.style.background = "white";
+  emailInput.style.borderColor = "gray";
 });

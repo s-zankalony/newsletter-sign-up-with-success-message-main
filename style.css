@@ -10,10 +10,11 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  max-height: 10px;
+  max-height: 50px;
+  margin: 5px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(225, 22%, 96%);
 }
 
 body {
@@ -26,7 +27,6 @@ body {
   display: flex;
   justify-content: space-around;
   max-width: 900px;
-  /* margin: calc(10vh) auto; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,27 +35,40 @@ body {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 5px 20px black;
-  /* display: none; */
+  flex-shrink: 1;
+}
+#bg-img {
+  content: url("./assets/images/illustration-sign-up-desktop.svg");
+  display: flex;
+  object-fit: cover;
+  width: 50%;
+  border-radius: 20px;
 }
 .card-text {
-  padding: 30px;
-  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  align-items: center;
+  margin-right: 20px;
 }
 .card-text h1 {
+  margin-top: 50px;
   font-size: 3rem;
 }
 .card-text p {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 ul {
   list-style-image: url("./assets/images/icon-list.svg");
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 60px;
   padding-left: 25px;
 }
 ul li {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  margin: 10px auto;
 }
 form {
   display: flex;
@@ -121,4 +134,50 @@ form input:hover {
 }
 .success-msg #dismiss {
   margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    /* padding: 0 20px 30px; */
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px black;
+    flex-shrink: 1;
+  }
+  #bg-img {
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+    object-fit: cover;
+    max-width: 100%;
+    width: 100vw;
+    /* padding-bottom: 10px; */
+  }
+
+  .card-text {
+    padding: 0 40px 40px;
+  }
+  .card-text h1 {
+    font-size: 2.5rem;
+  }
+  .card-text p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  ul {
+    margin-bottom: 30px;
+    padding-left: 15px;
+  }
+  ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 }

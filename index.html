@@ -11,7 +11,11 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -35,12 +39,13 @@
         </ul>
 
         <form id="submit-form">
-          <label for="Email Address" id="label-submit">Email Address</label>
+          <label for="email-input" id="label-submit">Email Address</label>
           <input
             type="email"
             name="email"
             placeholder="email@company.com"
             id="email-input"
+            autocomplete="on"
           />
 
           <button class="btn" type="submit" id="subscrbing">
@@ -49,7 +54,7 @@
         </form>
       </div>
 
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      <img src="" id="bg-img" />
     </div>
 
     <!-- Sign-up form end -->
